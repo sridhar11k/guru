@@ -13,7 +13,8 @@ crash.log
 crash.*.log
 
 # Exclude all variable files as they typically contain sensitive credentials
-*.tfvars
+sa.json
+#*.tfvars
 *.tfvars.json
 
 # If you use specific naming patterns for automatically loaded vars (optional)
