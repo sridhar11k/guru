@@ -1,0 +1,38 @@
+# Local directory for data, downloaded plugins/modules, and binaries
+.terraform/
+
+# Identity and access management / provider configuration caches
+.terraform.lock.hcl
+
+# Local state files (Never commit these; they contain cleartext secrets)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Exclude all variable files as they typically contain sensitive credentials
+*.tfvars
+*.tfvars.json
+
+# If you use specific naming patterns for automatically loaded vars (optional)
+# *.auto.tfvars
+# *.auto.tfvars.json
+
+# Ignore local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files if you explicitly want to keep them (rarely used)
+# !override.tf
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore speculative execution plans (default and common names)
+*tfplan*
+planout
